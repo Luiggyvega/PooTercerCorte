@@ -1,5 +1,8 @@
+import service.EmpleadoService;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        EmpleadoService empleadoService = new EmpleadoService();
+        empleadoService.menu();
     }
 }

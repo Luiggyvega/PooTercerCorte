@@ -16,7 +16,7 @@ public abstract class Empleado {
         this.cumplimientoDeProyecto = cumplimientoDeProyecto;
         this.proyectosQueParticipa = proyectosQueParticipa;
     }
-    public abstract double SueldoTotal();
+    public abstract double SueldoTotal( );
 
     @Override
     public String toString() {
@@ -25,7 +25,7 @@ public abstract class Empleado {
                 ", Nombre='" + Nombre + '\'' +
                 ", Apellido='" + Apellido + '\'' +
                 ", sueldo=" + sueldo +
-                ", cumplimientoDeProyecto=" + cumplimientoDeProyecto +
+                ", cumplimientoDeProyecto=" + cumplimientoDeProyecto +"%"+
                 ", proyectosQueParticipa=" + proyectosQueParticipa +
                 '}';
     }

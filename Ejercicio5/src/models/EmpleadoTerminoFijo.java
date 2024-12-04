@@ -8,10 +8,15 @@ public class EmpleadoTerminoFijo extends Empleado {
 
     @Override
     public double SueldoTotal() {
-        double sueldo = 0;
+        double sueldo = getSueldo();
         if (getCumplimientoDeProyecto()>90){
             sueldo = (getSueldo()*0.08)+getSueldo();
         }
         return sueldo;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "EmpleadoTerminoFijo{} " + " Sueldo final: " + SueldoTotal();
     }
 }
